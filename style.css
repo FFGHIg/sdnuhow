@@ -65,5 +65,37 @@ p{
     color: rgb(0, 0, 100);
     opacity: 0.75;
     user-select: none;
+body {
+    font-size: 18px; /* Increase the base font size */
+  }
+  
+  @media (max-width: 600px) {
+    body {
+      font-size: 16px; /* Further increase the font size for even smaller screens */
+    }
+  }
+}
+@media (max-width: 600px) {
+  .navbar {
+    position: relative;
+  }
 
+  .navbar a {
+    display: block;
+    width: 100%;
+  }
+
+  .navbar-collapse {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: #f9f9f9;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: none;
+  }
+
+  .navbar-collapse.show {
+    display: block;
+  }
 }
