@@ -1,4 +1,6 @@
-
+.add-change-button{
+    position: fixed ;
+}
 .paper{
     padding: 100px 100px;
 }
