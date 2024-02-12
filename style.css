@@ -1,0 +1,69 @@
+
+.paper{
+    padding: 100px 100px;
+}
+
+.backgru{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url("Images/pivo.jpg") ;
+    background-size: 1000px;
+    background-position: center center;
+}
+.paper{
+    
+    position: absolute;
+    background-image: url(Images/papirus.jpg);
+    background-size: 500px;
+    background-position: center center;
+    padding: 20px 100px;
+    width: auto;
+    box-shadow: 1px 15px 20px 0px rgba(0, 0, 0, 0.5);
+}
+
+.paper.heart{
+    position: relative;
+    width: 200px;
+    height: 200px;
+    padding: 0;
+    border-radius: 50%;
+}
+
+.paper.image{
+    padding: 10px;
+}
+
+.paper.image p{
+    font-size: 30px;
+}
+
+img{
+    max-height: 300px;
+    width: 100%;
+    user-select: none;
+}
+
+.paper.heart::after{
+    content: "";
+    background-image: url('Images/heart\ \(1\).webp');
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-size: 150px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    opacity: 0.6;
+}
+
+p{
+    font-family:'Pacifico';
+    font-size: 15px;
+    color: rgb(0, 0, 100);
+    opacity: 0.75;
+    user-select: none;
+
+}
